@@ -1,12 +1,16 @@
 /*
  * JavaScript Tutorial
- * Lesson 2 - JavaScript Console
+ * Lesson 3 - JavaScript Variables
 */
 
-var x = 'Mustafa';
+var variableOne;
 
-console.log('>> Console Message');
+console.log(">> variableOne =", variableOne);
 
-console.log('>> Variable Value', x);
+variableOne = "JavaScript Tutorial";
 
-console.log('>> Variable Value ' + x);
+console.log(">> Initialized variableOne =", variableOne);
+
+var variableTwo = "Mustafa";
+
+console.log(">> variableTwo =", variableTwo);
