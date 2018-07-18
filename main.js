@@ -1,16 +1,22 @@
 /*
  * JavaScript Tutorial
- * Lesson 3 - JavaScript Variables
+ * Lesson 4 - JavaScript Data Types
 */
 
-var variableOne;
+var stringVariable = "Mustafa";
+console.log(">> typeof stringVariable =", typeof stringVariable);
 
-console.log(">> variableOne =", variableOne);
+var numberVariable = 1;
+console.log(">> typeof numberVariable =", typeof numberVariable);
 
-variableOne = "JavaScript Tutorial";
+var booleanVariable = true;
+console.log(">> typeof booleanVariable =", typeof booleanVariable);
 
-console.log(">> Initialized variableOne =", variableOne);
+var nullVariable = null;
+console.log(">> typeof nullVariable =", typeof nullVariable);
 
-var variableTwo = "Mustafa";
+var unInitVariable;
+console.log(">> typeof unInitVariable =", typeof unInitVariable);
 
-console.log(">> variableTwo =", variableTwo);
+var undefinedVariable = undefined;
+console.log(">> typeof undefinedVariable =", typeof undefinedVariable);
