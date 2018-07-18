@@ -1,6 +1,12 @@
 /*
  * JavaScript Tutorial
- * Lesson 1 - Linking JavaScript Files to HTML Documents
+ * Lesson 2 - JavaScript Console
 */
 
-alert("JavaScript is working");
+var x = 'Mustafa';
+
+console.log('>> Console Message');
+
+console.log('>> Variable Value', x);
+
+console.log('>> Variable Value ' + x);
