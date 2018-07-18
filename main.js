@@ -1,36 +1,31 @@
 /*
  * JavaScript Tutorial
- * Lesson 5 - String & String Methods
- * length - concat() - toLowerCase() - toUpperCase() - startsWith() - endsWith() - indexOf() - lastIndexOf()
+ * Lesson 6 - String & String Methods
+ * replace() - trim() - split() - charAt() - substring()
 */
 
-var variableOne = "My name is";
-console.log(typeof variableOne);
-var statement = variableOne + " Mustafa";
-console.log(">> Statement", statement);
-
-var secondStatement = statement - " Mustafa";
-console.log(">> Second Statement", secondStatement);
-console.log(">> type of Second Statement", typeof secondStatement);
-
-var firstName = "Mustafa";
+var wrongFirstName = "       Austafa";
 var lastName = "Ahmed";
 
-console.log('>> Number of characters in Mustafa', firstName.length);
+console.log('>> wrongFristName', wrongFirstName);
 
-var fullName = firstName.concat(lastName);
-console.log('>> fullName', fullName);
-console.log(typeof fullName);
+var correctFirstName = wrongFirstName.replace('A', 'M');
+console.log('>> correctFirstName', correctFirstName);
 
-var fullNameLowerCase = fullName.toLowerCase();
-console.log('>> fullNameLowerCase', fullNameLowerCase);
+var firstName = correctFirstName.trim();
+console.log('>> firstName', firstName);
 
-var fullNameUpperCase = fullName.toLowerCase();
-console.log('>> fullNameUpperCase', fullNameUpperCase);
+var combinedMethods = wrongFirstName.replace('A', 'M').trim();
+console.log('>> combinedMethods', combinedMethods);
 
-console.log(">> Mustafa starts with (M)", firstName.startsWith('M'));
-console.log(">> Mustafa ends with (M)", firstName.endsWith('M'));
+var charactersArray = firstName.split('');
+console.log(charactersArray);
 
-console.log('>> Index of (M) in Mustafa', firstName.indexOf('M'));
-console.log('>> Index of (a) in Mustafa', firstName.indexOf('a'));
-console.log('>> Last index of (a) in Mustafa', firstName.lastIndexOf('a'));
+var characterAtIndex3 = firstName.charAt(3);
+console.log('>> character at index 3', characterAtIndex3);
+
+var charactersArraySplitIndex3 = firstName.split(charactersArraySplitIndex3);
+console.log(charactersArraySplitIndex3);
+
+var subbedString = firstName.substring(3);
+console.log('>> Sub string', subbedString);
