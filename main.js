@@ -1,31 +1,33 @@
 /*
  * JavaScript Tutorial
- * Lesson 6 - String & String Methods
- * replace() - trim() - split() - charAt() - substring()
+ * Lesson 7 - Number & Number Methods
+ * infinity - isFinite() - isNaN() - parseInt() - parseFloat()
 */
 
-var wrongFirstName = "       Austafa";
-var lastName = "Ahmed";
+var x = 10;
+var y = 20.5;
 
-console.log('>> wrongFristName', wrongFirstName);
+console.log('>> typeof 10', typeof x);
+console.log('>> typeof 20.5', typeof y);
 
-var correctFirstName = wrongFirstName.replace('A', 'M');
-console.log('>> correctFirstName', correctFirstName);
+console.log(x + y);
+console.log(x * y);
+console.log(x - y);
+console.log(x / y);
 
-var firstName = correctFirstName.trim();
-console.log('>> firstName', firstName);
+var z = "10";
 
-var combinedMethods = wrongFirstName.replace('A', 'M').trim();
-console.log('>> combinedMethods', combinedMethods);
+console.log("number + string", x + z, typeof x + z);
+console.log("string + number", z + x, typeof z + x);
 
-var charactersArray = firstName.split('');
-console.log(charactersArray);
+console.log("number - string", x - z, typeof x - z);
+console.log("string - number", z - x, typeof z - x);
 
-var characterAtIndex3 = firstName.charAt(3);
-console.log('>> character at index 3', characterAtIndex3);
+console.log(Infinity, Infinity + 1);
+console.log('>> 10 is finite', isFinite(10));
+console.log('>> infinity is finite', isFinite(Infinity));
 
-var charactersArraySplitIndex3 = firstName.split(charactersArraySplitIndex3);
-console.log(charactersArraySplitIndex3);
+console.log('>> 20.5 is nan', isNaN(y));
 
-var subbedString = firstName.substring(3);
-console.log('>> Sub string', subbedString);
+var i = "10" + 10;
+console.log(typeof i, typeof parseInt(i));
