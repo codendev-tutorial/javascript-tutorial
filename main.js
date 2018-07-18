@@ -1,33 +1,33 @@
 /*
  * JavaScript Tutorial
- * Lesson 7 - Number & Number Methods
- * infinity - isFinite() - isNaN() - parseInt() - parseFloat()
+ * Lesson 8 - Math Object
+ * abs() - floor() - ciel() - round() - random() - max() - min()
 */
 
-var x = 10;
-var y = 20.5;
+var x = -1;
+console.log('>> Value of x', x);
 
-console.log('>> typeof 10', typeof x);
-console.log('>> typeof 20.5', typeof y);
+var y = Math.abs(x);
+console.log('>> Abs value of -1', y);
 
-console.log(x + y);
-console.log(x * y);
-console.log(x - y);
-console.log(x / y);
+// Generate a random number between 0 and 1
+var z = Math.random();
+console.log(z);
 
-var z = "10";
+// Floor 0.7 to the nearest smaller integer
+console.log(Math.floor(0.7));
 
-console.log("number + string", x + z, typeof x + z);
-console.log("string + number", z + x, typeof z + x);
+// Ciel 0.3 to the nearest bigger integer
+console.log(Math.ceil(0.3));
 
-console.log("number - string", x - z, typeof x - z);
-console.log("string - number", z - x, typeof z - x);
+// Round 0.7 to the nearest decimal
+console.log(Math.round(0.7));
 
-console.log(Infinity, Infinity + 1);
-console.log('>> 10 is finite', isFinite(10));
-console.log('>> infinity is finite', isFinite(Infinity));
+// Round 0.3 to the nearest decimal
+console.log(Math.round(0.3));
 
-console.log('>> 20.5 is nan', isNaN(y));
+// Minimum Number in arguments
+console.log(Math.min(1, 3, 2, 0, -1, -Infinity));
 
-var i = "10" + 10;
-console.log(typeof i, typeof parseInt(i));
+// Maximum number in arguments
+console.log(Math.max(1, 2, 3, 4, 9));
