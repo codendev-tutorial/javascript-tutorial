@@ -1,22 +1,36 @@
 /*
  * JavaScript Tutorial
- * Lesson 4 - JavaScript Data Types
+ * Lesson 5 - String & String Methods
+ * length - concat() - toLowerCase() - toUpperCase() - startsWith() - endsWith() - indexOf() - lastIndexOf()
 */
 
-var stringVariable = "Mustafa";
-console.log(">> typeof stringVariable =", typeof stringVariable);
+var variableOne = "My name is";
+console.log(typeof variableOne);
+var statement = variableOne + " Mustafa";
+console.log(">> Statement", statement);
 
-var numberVariable = 1;
-console.log(">> typeof numberVariable =", typeof numberVariable);
+var secondStatement = statement - " Mustafa";
+console.log(">> Second Statement", secondStatement);
+console.log(">> type of Second Statement", typeof secondStatement);
 
-var booleanVariable = true;
-console.log(">> typeof booleanVariable =", typeof booleanVariable);
+var firstName = "Mustafa";
+var lastName = "Ahmed";
 
-var nullVariable = null;
-console.log(">> typeof nullVariable =", typeof nullVariable);
+console.log('>> Number of characters in Mustafa', firstName.length);
 
-var unInitVariable;
-console.log(">> typeof unInitVariable =", typeof unInitVariable);
+var fullName = firstName.concat(lastName);
+console.log('>> fullName', fullName);
+console.log(typeof fullName);
 
-var undefinedVariable = undefined;
-console.log(">> typeof undefinedVariable =", typeof undefinedVariable);
+var fullNameLowerCase = fullName.toLowerCase();
+console.log('>> fullNameLowerCase', fullNameLowerCase);
+
+var fullNameUpperCase = fullName.toLowerCase();
+console.log('>> fullNameUpperCase', fullNameUpperCase);
+
+console.log(">> Mustafa starts with (M)", firstName.startsWith('M'));
+console.log(">> Mustafa ends with (M)", firstName.endsWith('M'));
+
+console.log('>> Index of (M) in Mustafa', firstName.indexOf('M'));
+console.log('>> Index of (a) in Mustafa', firstName.indexOf('a'));
+console.log('>> Last index of (a) in Mustafa', firstName.lastIndexOf('a'));
